@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Rating Musical</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Rating de Canciones y Cantantes</h1>
+
+<div id="menu">
+  <button id="agregarBtn">Agregar Persona</button>
+  <button id="mostrarBtn">Mostrar Persona</button>
+</div>
+
+<div id="formularioAgregar" class="oculto">
+  <!-- Formulario para agregar persona -->
+  <h2>Agregar Persona</h2>
+  <input type="text" id="nombre" placeholder="Nombre" required>
+  <input type="text" id="cedula" placeholder="Cédula" required>
+  <input type="date" id="fechaNacimiento" placeholder="Fecha de Nacimiento" required>
+  <input type="email" id="correo" placeholder="Correo Electrónico" required>
+  <input type="text" id="ciudadResidencia" placeholder="Ciudad de Residencia" required>
+  <input type="text" id="ciudadOrigen" placeholder="Ciudad de Origen" required>
+  <!-- Campos para las canciones favoritas -->
+  <div id="cancionesFavoritas">
+    <input type="text" class="artista" placeholder="Artista Canción 1" required>
+    <input type="text" class="tituloCancion" placeholder="Título Canción 1" required>
+    <input type="text" class="artista" placeholder="Artista Canción 2">
+    <input type="text" class="tituloCancion" placeholder="Título Canción 2">
+    <input type="text" class="artista" placeholder="Artista Canción 3">
+    <input type="text" class="tituloCancion" placeholder="Título Canción 3">
+  </div>
+  <button id="guardarPersonaBtn">Guardar Persona</button>
+</div>
+
+<div id="formularioMostrar" class="oculto">
+  <!-- Formulario para mostrar persona -->
+  <h2>Mostrar Persona</h2>
+  <input type="number" id="indicePersona" placeholder="Posición de la Persona" required>
+  <button id="buscarPersonaBtn">Buscar Persona</button>
+  <div id="datosPersona">
+    <!-- Aquí se mostrarán los datos de la persona -->
+  </div>
+</div>
+
+<script src="rating.js"></script>
+</body>
+</html>

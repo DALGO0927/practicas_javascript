@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cálculo de Área y Perímetro</title>
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<h1>Cálculo de Área y Perímetro</h1>
+
+<!-- Formulario para seleccionar la figura -->
+<form id="formFiguras">
+  <label for="figura">Seleccione la figura:</label>
+  <select id="figura" name="figura">
+    <option value="triangulo">Triángulo</option>
+    <option value="rectangulo">Rectángulo</option>
+    <option value="cuadrado">Cuadrado</option>
+    <option value="circulo">Círculo</option>
+  </select>
+  <div id="inputsFigura">
+    <!-- inputs necesarios de acuerdo a la figura seleccionada -->
+  </div>
+  <button type="submit">Calcular</button>
+</form>
+
+<!-- Aquí se mostrarán los resultados -->
+<div id="resultado">
+  <p>Área: <span id="areaResultado"></span></p>
+  <p>Perímetro: <span id="perimetroResultado"></span></p>
+</div>
+
+<script src="CalcularArea.js"></script> <!-- Enlazando el archivo JavaScript -->
+</body>
+</html>
